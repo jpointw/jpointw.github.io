@@ -6,6 +6,7 @@ categories:
 tags:
   - [Game Engine, Unity]
 
+published: true
 toc: true
 toc_sticky: true
 
@@ -13,43 +14,39 @@ date: 2021-01-17
 last_modified_at: 2021-01-17
 ---
 
-공부하면서 알게된 것만 정리합니다.
-{: .notice--warning}
-
-
 #Vector2, Vector3
 
 > 위치 좌표, 벡터
-## 🚀 변수/프로퍼티
+## 변수/프로퍼티
 
-### ✈ magnitude
+###  magnitude
 
 벡터의 길이 및 크기. float
 
 <br>
 
-### ✈ sqrMagnitude
+###  sqrMagnitude
 
 벡터의 길이 제곱. float
 
 <br>
 
-### ✈ normalized
+###  normalized
 
 해당 벡터의 방향 벡터. (길이 1)
 
 <br>
 
-### ✈ forward, backward, left, right, up, down
+###  forward, backward, left, right, up, down
 
-- `Vector3.forward` 👉 그저 언제나 Vector3(0, 0, 1) 값이다. 
+- `Vector3.forward`  그저 언제나 Vector3(0, 0, 1) 값이다. 
   - 이것을 Local로 쓸지, World로 쓸지는 개발자 선택
-- `Vector3.right` 👉 그저 언제나 Vector3(1, 0, 0) 값이다. 
+- `Vector3.right`  그저 언제나 Vector3(1, 0, 0) 값이다. 
   - 이것을 Local로 쓸지, World로 쓸지는 개발자 선택
 
 <br>
 
-### ✈ zero
+###  zero
 
 Vector3.zero 는 Vector3(0, 0, 0,)과  같다.
 
@@ -58,9 +55,9 @@ Vector3.zero 는 Vector3(0, 0, 0,)과  같다.
 
 
 
-## 🚀 함수
+##  함수
 
-### ✈ SmoothDamp
+###  SmoothDamp
 
 > public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 currentVelocity, float smoothTime, float maxSpeed = Mathf.Infinity, float deltaTime = Time.deltaTime);
 `current` 벡터로부터 `target` 벡터 값까지 `smoothTime`동안 스무스하게 변화하는 과정에서의 벡터를 `currentVelocity`에 업데이트. 마지막 프레임에서의 속도를 나타낸다. 함수 안에서 계산되어 바깥으로 꺼내짐.
@@ -72,28 +69,28 @@ Vector3.zero 는 Vector3(0, 0, 0,)과  같다.
 
 <br>
 
-### ✈ Distance
+###  Distance
 
 > public static float Distance(Vector3 a, Vector3 b);
 a 와 b 사이의 거리를 리턴한다. float 리턴.
 
 <br>
 
-### ✈ Angle
+###  Angle
 
 > public static float Angle(Vector3 from, Vector3 to);
 a 와 b 사이의 각도를 리턴한다. float 리턴.
 
 <br>
 
-### ✈ Set
+###  Set
 
 > public void Set(float newX, float newY, float newZ);
 이 함수를 호출한 벡터의 x, y, z 요소를 설정한다.
 
 <br>
 
-### ✈ SqrMagnitude
+###  SqrMagnitude
 
 > public static float SqrMagnitude(Vector3 vector3);
 - 벡터의 길이의 제곱 (루트는 취하지 않은 상태)
@@ -101,7 +98,7 @@ a 와 b 사이의 각도를 리턴한다. float 리턴.
 
 <br>
 
-### ✈ MoveForwards
+###  MoveForwards
 
 > public static Vector3 MoveTowards(Vector3 current, Vector3 target, float maxDistanceDelta);
 현재 위치 `current`에서 목표 위치 `target`까지 `maxDistanceDelta`의 속도로 이동한 결과인 **Vector3 를 리턴**한다.
@@ -112,7 +109,7 @@ transform.position = Vector3.MoveTowards(transform.position, destPos, moveSpeed 
 
 <br>
 
-### ✈ Lerp
+###  Lerp
 
 > public static Vector3 Lerp(Vector3 a, Vector3 b, float t);
   - 두 Vector3 `a`, `b` 사이를 `t` 비율만큼 보간한 Vector3 리턴
@@ -122,9 +119,4 @@ transform.position = Vector3.MoveTowards(transform.position, destPos, moveSpeed 
     - `0.2f`면 `a`에 좀 더 가깝게 회전
 
 ***
-<br>
-
-    🌜 개인 공부 기록용 블로그입니다. 오류나 틀린 부분이 있을 경우 
-    언제든지 댓글 혹은 메일로 지적해주시면 감사하겠습니다! 😄
-
 [맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}
