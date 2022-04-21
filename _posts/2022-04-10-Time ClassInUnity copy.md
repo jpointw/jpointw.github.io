@@ -16,7 +16,7 @@ last_modified_at: 2021-04-10
 
 #유니티 사용 시 Time Class의 이해
 
-> 절댓값,최대/최솟값,근사값,선형보간,라디안
+> Deltatime,time,fixedDeltatime,timeScale
 ## 변수/프로퍼티
 
 ###  Deltatime
