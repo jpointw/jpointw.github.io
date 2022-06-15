@@ -10,13 +10,13 @@ published: true
 toc: true
 toc_sticky: true
 
-date: 2021-03-29
-last_modified_at: 2021-03-29
+date: 2022-03-29
+last_modified_at: 2022-03-29
 ---
 
 #유니티 사용 시 유용한 mathf 함수
 
-> 절댓값,최대/최솟값,근사값,선형보간,라디안
+> 절댓값,최대/최솟값,근사값,선형보간
 ## 변수/프로퍼티
 
 ###  절댓값
@@ -50,13 +50,6 @@ num값이 min보다 작으면 min값을, num값이 max값보다 크면 max값을
 >Math.Lerp(float a, float b, float t)
 
 a와 b사이의 값을 반환하는 함수 t
-
-<br>
-
-###  zero
-
-Vector3.zero 는 Vector3(0, 0, 0,)과  같다.
-
 
 <br>
 

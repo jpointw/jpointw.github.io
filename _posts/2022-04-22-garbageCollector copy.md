@@ -10,8 +10,8 @@ published: true
 toc: true
 toc_sticky: true
 
-date: 2021-04-22
-last_modified_at: 2021-04-22
+date: 2022-04-22
+last_modified_at: 2022-04-22
 ---
 
 #가비지 컬렉터,컬렉션의 이해
