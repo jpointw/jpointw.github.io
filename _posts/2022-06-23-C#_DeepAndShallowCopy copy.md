@@ -139,7 +139,7 @@ System 네임스페이스에는 ICloneable이라는 인터페이스가 있다.
 
 ICloneable 인터페이스는 Clone()이라는 메소드 하나만 오버라이딩하여 구현하면 된다.
 
-```C#
+``` C#
 class Monster : ICloneable
 {
      public int hp;
@@ -161,5 +161,7 @@ class Monster : ICloneable
      }
 }
 ```
+
 사실상 사용하는 방법은 DeepCopy() 메소드와 별 차이가 없는 것 같다.
+
 [맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}
