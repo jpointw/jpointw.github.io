@@ -10,8 +10,8 @@ published: true
 toc: true
 toc_sticky: true
 
-date: 2022-06-20
-last_modified_at: 2022-06-20
+date: 2022-06-21
+last_modified_at: 2022-06-21
 ---
 
 # 참조에 의한 매개변수 전달 (ref, out)
