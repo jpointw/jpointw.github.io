@@ -116,4 +116,5 @@ using StringExtension;
 string hello = "Hello";
 Console.WriteLine(hello.Append(", World!"));
 ```
+Hello, World!
 [맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}
