@@ -10,8 +10,8 @@ published: true
 toc: true
 toc_sticky: true
 
-date: 2022-07-10
-last_modified_at: 2022-07-10
+date: 2022-07-11
+last_modified_at: 2022-07-11
 ---
 
 # 일반화 대리자 (Generic Delegate)
