@@ -8,25 +8,33 @@
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">C/C++/C#</span>
+        <span class="nav__sub-title">C#/C++</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Cpp" %}
+                    {% if category[0] == "C#" %}
                         <li><a href="/categories/C#" class="">C# ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "STL" %}
-                        <li><a href="/categories/Unity" class="">AllofUnity ({{category[1].size}})</a></li>
+                    {% if category[0] == "C++" %}
+                        <li><a href="/categories/C++" class="">C++ ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <span class="nav__sub-title">Unity</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Unity" %}
+                        <li><a href="/categories/AllofUnity" class="">AllofUnity ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "C++ games" %}
-                        <li><a href="/categories/UnrealEngine" class="">ALLofUnrealEngine ({{category[1].size}})</a></li>
+                    {% if category[0] == "UnrealEngine" %}
+                        <li><a href="/categories/Unity" class="">ALLofUnrealEngine ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
